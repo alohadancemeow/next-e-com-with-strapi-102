@@ -1,7 +1,8 @@
 // @ts-nocheck
 ("use strict");
 
-const stripe = require("stripe")(process.env.STRIPE_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+
 /**
  * order controller
  */
@@ -35,7 +36,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
       );
 
       const session = await stripe.checkout.sessions.create({
-        shipping_address_collection: { allowed_countries: ["IN"] },
+        shipping_address_collection: { allowed_countries: ["IN", "TH"] },
         payment_method_types: ["card"],
         mode: "payment",
         success_url: process.env.CLIENT_URL + `/success`,
