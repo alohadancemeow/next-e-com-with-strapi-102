@@ -862,6 +862,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     singularName: 'product';
     pluralName: 'products';
     displayName: 'product';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -872,8 +873,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
     price: Attribute.Decimal & Attribute.Required;
     description: Attribute.RichText;
     size: Attribute.JSON;
-    image: Attribute.Media<'images', true>;
-    thumbnail: Attribute.Media<'images'> & Attribute.Required;
     original_price: Attribute.Decimal;
     slug: Attribute.UID<'api::product.product', 'name'>;
     categories: Attribute.Relation<
@@ -881,6 +880,8 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'manyToMany',
       'api::category.category'
     >;
+    images: Attribute.JSON & Attribute.Required;
+    thumbnail: Attribute.JSON & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
