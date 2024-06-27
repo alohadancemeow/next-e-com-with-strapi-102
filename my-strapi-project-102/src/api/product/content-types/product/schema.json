@@ -42,13 +42,26 @@
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "images": {
-      "type": "json",
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
       "required": true
     },
-    "thumbnail": {
-      "type": "json",
-      "required": true
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
