@@ -63,7 +63,7 @@ npm i @netlify/plugin-nextjs
 
 **🖼️ Screenshot:**
 
-![Image of shoe store home page](public\screenshot\home-screenshot.png)
+![Image of shoe store home page](public/screenshot/home-screenshot.png)
 
 **👋 Contributions Welcome!**
 
