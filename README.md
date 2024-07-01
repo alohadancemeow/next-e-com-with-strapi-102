@@ -10,7 +10,7 @@ For learning Strapi CMS.
 - **Inspiration:** [Link to original repository](https://github.com/ShariqAnsari88/shoe-store-frontend) (adapted for this implementation) 🙏
 - **Purpose:** For learning Strapi CMS
 
-**🚀 Getting Started:**
+**👋 Getting Started:**
 
 1. Clone this repository.
 2. Install dependencies (`npm install` or `yarn install`).
@@ -73,3 +73,5 @@ Encouraging constructive feedback and pull requests to enhance this project.
 
 This repository is currently under development. I will continuously improve and document it. Stay tuned for updates!
 
+
+**🎉 Live site:** https://shoe-store-frontend-demo.netlify.app
